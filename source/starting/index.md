@@ -122,10 +122,10 @@ date: 2021-10-28 19:51:40
 如果你不想下载或不需要自定义，也可以使用 CDN 来引用。
 
 ```html 引用 CSS 文件
-<link href="https://cdn.jsdelivr.net/gh/mopsite/asset/fontawesome/css/all.css">
+<link href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/fontawesome/v5/all.css">
 ```
 
 ```html 引用 JavaScript 文件
-<script src="https://cdn.jsdelivr.net/gh/mopsite/asset/fontawesome/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xlovet/asset/js/fontawesome.js"></script>
 ```
 {%endnote%}

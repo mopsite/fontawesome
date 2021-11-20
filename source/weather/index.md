@@ -3,9 +3,9 @@ title: Weather Icons
 date: 2021-11-01 20:28:12
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/css/wind.css">
-<script src="https://cdn.jsdelivr.net/gh/mopsite/asset/clipboard.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/wind.css">
+<script src="https://cdn.jsdelivr.net/gh/xlovet/asset/js/clipboard.js"></script>
 <script>
   var clipboard = new ClipboardJS('.wi');
 </script>
@@ -36,12 +36,12 @@ Weather Icons 是唯一一款带有 222 个以天气为主题的图标字体库�
 
 ### 使用
 
-要使用 Weather Icons，请将 [css 主文件](https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/css/main.css) 放置在 css 目录中，并将 [字体文件](https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/font/weathericons-regular-webfont.woff2) 放置在与 css 目录相同文件夹级别的 font 目录中。完成此操作后，在 HTML 中引用图标所要做的就是`<i class="wi wi-night-sleet"></i>`。
+要使用 Weather Icons，请将 [css 主文件](https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/main.css) 放置在 css 目录中，并将 [字体文件](https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/font/weathericons-regular-webfont.woff2) 放置在与 css 目录相同文件夹级别的 font 目录中。完成此操作后，在 HTML 中引用图标所要做的就是`<i class="wi wi-night-sleet"></i>`。
 
 {%note info%}
 你也可以使用 CDN 引入：
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/main.css">
 ```
 {%endnote%}
 
@@ -123,7 +123,7 @@ Weather Icons 是唯一一款带有 222 个以天气为主题的图标字体库�
 
 `class="wi wi-wind torwrds-23-deg"`
 
-你必须包含 [weather-iconds-wind.css](https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/css/wind.css) 样式表才能使用风度图标。
+你必须包含 [weather-iconds-wind.css](https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/wind.css) 样式表才能使用风度图标。
 {%endnote%}
 
 |||||||||||
@@ -141,7 +141,7 @@ Weather Icons 是唯一一款带有 222 个以天气为主题的图标字体库�
 
 `class="wi wi-wind wi-from-e"`
 
-你必须包含 [weather-iconds-wind.css](https://cdn.jsdelivr.net/gh/mopsite/asset/weather-icons/css/wind.css) 样式表才能使用风向图标。
+你必须包含 [weather-iconds-wind.css](https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/wind.css) 样式表才能使用风向图标。
 {%endnote%}
 
 |||||||||||
