@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Font Awesome</title>
+    <url>/fontawesome/2021/10/29/intro/</url>
+    <content><![CDATA[<p>网络上最流行的图标集和工具包。</p>
+<h4 id="定制图标"><a href="#定制图标" class="headerlink" title=" 定制图标"></a><i class="fad fa-acorn fa-fw" style="--fa-primary-color: rgb(155, 106, 1); --fa-secondary-color: rgb(235, 141, 0);"></i> 定制图标</h4><p>可以根据你的需要使用任何颜色来显示，或者进行自定义。</p>
+<h4 id="专业设计"><a href="#专业设计" class="headerlink" title=" 专业设计"></a><i class="fad fa-adjust fa-fw" style="--fa-primary-color: rgb(218, 41, 28); --fa-secondary-color: rgb(0, 69, 173);"></i> 专业设计</h4><p>每一个符号都经过精心设计，具有高度一致的外观。</p>
+<h4 id="近乎无限"><a href="#近乎无限" class="headerlink" title=" 近乎无限"></a><i class="fad fa-bus fa-fw" style="--fa-primary-color: rgb(136, 0, 199); --fa-secondary-color: rgb(255, 174, 25);"></i> 近乎无限</h4><p>拥有 5000 多个图标，不用再没头绪的寻找你需要的图标。</p>
+<h4 id="历经考验"><a href="#历经考验" class="headerlink" title=" 历经考验"></a><i class="fad fa-bug fa-fw" style="--fa-primary-color: rgb(110, 66, 0); --fa-secondary-color: rgb(216, 61, 0);"></i> 历经考验</h4><p>所有的图标和样式，都能够在所有现代浏览器中完美显示。</p>
+<h4 id="强化变形"><a href="#强化变形" class="headerlink" title=" 强化变形"></a><i class="fad fa-apple-alt fa-fw" style="--fa-primary-color: rgb(255, 66, 66); --fa-secondary-color: rgb(33, 153, 0);"></i> 强化变形</h4><p>可以将图标任意缩小、放大和旋转，或者快速处理计数器和徽章。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>图标库</title>
+    <url>/fontawesome/icons/index.html</url>
+    <content><![CDATA[<p>这里列出了所有 Font Awesome 字体图标。点击分类即可查看对应的 PDF，其中包含所有图标样式、名称及编码。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>开始使用</title>
+    <url>/fontawesome/starting/index.html</url>
+    <content><![CDATA[<p>如果你在一个代码库中有多个站点或应用程序，或者你想自定义 Font Awesome 的某些部分，那么自己 <a href="https://gitee.com/megaminx/asset/raw/master/fontawesome/fa-5.15.4.rar">下载</a> 和托管 Font Awesome 则非常实用。</p>
+<h3 id="你的下载包含了些什么"><a href="#你的下载包含了些什么" class="headerlink" title="你的下载包含了些什么"></a>你的下载包含了些什么</h3><p>面向 Web 的 Font Awesome 软件包包含了以下目录和文件：</p>
+<table>
+<thead>
+<tr>
+<th>Files &amp; Folders</th>
+<th>What They Are</th>
+<th>Where You Should Start</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/css</td>
+<td>Web 字体样式表文件</td>
+<td>all.css</td>
+</tr>
+<tr>
+<td>/js</td>
+<td>SVG 的 JavaScript 文件</td>
+<td>all.js</td>
+</tr>
+<tr>
+<td>/less</td>
+<td>Less 预处理器文件</td>
+<td>fontawesome.less</td>
+</tr>
+<tr>
+<td>/scss</td>
+<td>Sass 预处理器文件</td>
+<td>fontawesome.scss</td>
+</tr>
+<tr>
+<td>/sprites</td>
+<td>SVG 精灵图</td>
+<td>solid.svg</td>
+</tr>
+<tr>
+<td>/svgs</td>
+<td>每个图标单独对应的 SVG</td>
+<td>单独的 .svg 图标</td>
+</tr>
+<tr>
+<td>/webfonts</td>
+<td>样式表文件中使用的 Web 字体</td>
+<td>参见 /css</td>
+</tr>
+</tbody></table>
+<h3 id="使用-Web-字体的-CSS"><a href="#使用-Web-字体的-CSS" class="headerlink" title="使用 Web 字体的 CSS"></a>使用 Web 字体的 CSS</h3><p>/css/all.css 文件包含核心样式以及使用 Font Awesome 时所需的所有图标样式。/webfonts 文件夹包含上述 CSS 引用并依赖的所有字体文件。</p>
+<p>将整个 /webfonts 文件夹和 /css/all.css 复制到项目的静态资源目录中，然后将对 all.css 文件的引用添加到要使用 Font Awesome 的每个模板或页面的<code>&lt;head&gt;</code>中。</p>
+<div class="tabs" id="css"><ul class="nav-tabs"><li class="tab active"><a href="#css-1">代码</a></li><li class="tab"><a href="#css-2">效果</a></li></ul><div class="tab-content"><div class="tab-pane active" id="css-1"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/all.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span> <span class="comment">&lt;!-- 加载所有样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 regular 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fal fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 light 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="css-2"><p><i class="fas fa-user"></i><br><i class="far fa-user"></i><br><i class="fal fa-user"></i><br><i class="fab fa-github-square"></i></p></div></div></div>
+
+<h3 id="SVG-与-JavaScript-结合"><a href="#SVG-与-JavaScript-结合" class="headerlink" title="SVG 与 JavaScript 结合"></a>SVG 与 JavaScript 结合</h3><p>/js/all.js 会加载所有基本功能，以及使用 Font Awesome 时所需的所有图标样式。将其复制到项目的静态资源目录，在要使用 Font Awesome 的每个模板或页面的<code>&lt;head&gt;</code>中，添加对 all.js 文件的引用。</p>
+<div class="tabs" id="js"><ul class="nav-tabs"><li class="tab active"><a href="#js-1">代码</a></li><li class="tab"><a href="#js-2">效果</a></li></ul><div class="tab-content"><div class="tab-pane active" id="js-1"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/all.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> <span class="comment">&lt;!-- 加载所有样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 regular 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fal fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 light 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="js-2"><p><i class="fas fa-user"></i><br><i class="far fa-user"></i><br><i class="fal fa-user"></i><br><i class="fab fa-github-square"></i></p></div></div></div>
+
+<h3 id="仅使用某些样式"><a href="#仅使用某些样式" class="headerlink" title="仅使用某些样式"></a>仅使用某些样式</h3><p>在将 Web 字体与 CSS 框架一起使用时，是否指向使用某些样式的图标？/css 文件夹包含 Font Awesome 所有样式（solid、regular、light 和 brands）的核心样式文件。/webfonts 文件夹包含上述 CSS 引用并依赖的所有字体文件。</p>
+<table>
+<thead>
+<tr>
+<th>图标样式</th>
+<th>Web 字体文件</th>
+<th>CSS 文件</th>
+<th>对应版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Brands</td>
+<td>fa-brands-400.*</td>
+<td>brands.css</td>
+<td>免费版</td>
+</tr>
+<tr>
+<td>Solid</td>
+<td>fa-solid-900.*</td>
+<td>solid.css</td>
+<td>免费版</td>
+</tr>
+<tr>
+<td>Regular</td>
+<td>fa-regular-400.*</td>
+<td>regular.css</td>
+<td>专业版</td>
+</tr>
+<tr>
+<td>Light</td>
+<td>fa-light-300.*</td>
+<td>light.css</td>
+<td>专业版</td>
+</tr>
+</tbody></table>
+<p>将 /webfonts 和 /css 文件夹都复制到项目的静态资源目录中，你可以根据需要删除不打算使用的任何样式的样式表文件和 Web 字体文件。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 项目仅需要 Solid + Brands --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/fontawesome.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/brands.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/solid.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在将 SVG 与 CSS 框架一起使用时，如果只想使用某些样式，方法同上。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 项目仅需要 Solid + Brands --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/brands.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/solid.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/fontawesome.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><p>建议将 /webfonts 和 /css 文件夹保留在同一目录中。因为如果不这样做，则需要更改每种样式的 CSS 文件中引用的 Web 字体的路径。</p>
+</div>
+
+<div class="note info"><p>如果你不想下载或不需要自定义，也可以使用 CDN 来引用。</p>
+<figure class="highlight html"><figcaption><span>引用 CSS 文件</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/xlovet/asset/css/fontawesome/v5/all.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><figcaption><span>引用 JavaScript 文件</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/xlovet/asset/js/fontawesome.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>Weather Icons</title>
+    <url>/fontawesome/weather/index.html</url>
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/wind.css">
+<script src="https://cdn.jsdelivr.net/gh/xlovet/asset/js/clipboard.js"></script>
+<script>
+  var clipboard = new ClipboardJS('.wi');
+</script>
+
+<style>
+  .wi {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+</style>
+
+<p>Weather Icons 是唯一一款带有 222 个以天气为主题的图标字体库，可以直接放入任何需要高质量天气海事和气象图标的项目中。</p>
+<ul>
+<li><p>灵活的 CSS<br>你可以对文本进行操作，也可以对图标进行操作。缩放、旋转、翻转、更改颜色、添加阴影……等等。</p>
+</li>
+<li><p>在图形应用程序中使用<br>你可以复制图标，并将其直接粘贴到 PhotoShop、Illustrator、Sketch 等图形应用程序中。</p>
+</li>
+<li><p>翻转、缩放、变换<br>使用固定宽度、水平或垂直翻转和旋转 90、180 或 270 度的内置使用程序类，可以轻松修改图标外观。</p>
+</li>
+<li><p>专业图标<br>222 个以天气为主题的图标，其中包括 28 个月相、12 小时的时钟、海上风向警告等。</p>
+</li>
+<li><p>支持 Less 和 Sass<br>你可以使用 Less 或 Sass 预处理程序，将 Weather Icons 图标直接集成到你现有的项目中。</p>
+</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>要使用 Weather Icons，请将 <a href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/main.css">css 主文件</a> 放置在 css 目录中，并将 <a href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/font/weathericons-regular-webfont.woff2">字体文件</a> 放置在与 css 目录相同文件夹级别的 font 目录中。完成此操作后，在 HTML 中引用图标所要做的就是<code>&lt;i class=&quot;wi wi-night-sleet&quot;&gt;&lt;/i&gt;</code>。</p>
+<div class="note info"><p>你也可以使用 CDN 引入：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/main.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="变换"><a href="#变换" class="headerlink" title="变换"></a>变换</h3><p>使用下面的类，可以将任何 Weather Icons 图标进行翻转、旋转。</p>
+<ul>
+<li>水平翻转：<code>wi-flip-horizontal</code></li>
+<li>垂直翻转：<code>wi-flip-vertical</code></li>
+<li>旋转 90°：<code>wi-rotate-90</code></li>
+<li>旋转 180°：<code>wi-rotate-180</code></li>
+<li>旋转 270°：<code>wi-rotate-270</code></li>
+<li>固定宽度：<code>wi fw</code></li>
+</ul>
+<h3 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h3><p>下面列出了所有 Weather Icons 图标，点击图标即可将对应的类名复制到你的剪贴板中，例如<code>wi wi-day-sunny</code>。</p>
+<h4 id="白天"><a href="#白天" class="headerlink" title="白天"></a>白天</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-day-sunny" title="day-sunny" data-clipboard-text="wi wi-fw wi-day-sunny"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-cloudy" title="day-cloudy" data-clipboard-text="wi wi-day-cloudy"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-cloudy-gusts" title="day-cloudy-gusts" data-clipboard-text="wi wi-day-cloudy-gusts"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-windy" title="day-windy" data-clipboard-text="wi wi-day-windy"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-fog" title="day-fog" data-clipboard-text="wi wi-day-fog"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-hail" title="day-hail" data-clipboard-text="wi wi-day-hail"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-haze" title="day-haze" data-clipboard-text="wi wi-day-haze"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-lightning" title="day-lightning" data-clipboard-text="wi wi-day-lightning"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-rain" title="day-rain" data-clipboard-text="wi wi-day-rain"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-rain-mix" title="day-rain-mix" data-clipboard-text="wi wi-day-rain-mix"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-day-rain-wind" title="day-rain-wind" data-clipboard-text="wi wi-day-rain-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-showers" title="day-showers" data-clipboard-text="wi wi-day-showers"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-sleet" title="day-sleet" data-clipboard-text="wi wi-day-sleet"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-sleet-storm" title="day-sleet-storm" data-clipboard-text="wi wi-day-sleet-storm"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-snow" title="day-snow" data-clipboard-text="wi wi-day-snow"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-snow-thunderstorm" title="day-snow-thunderstorm" data-clipboard-text="wi wi-day-snow-thunderstorm"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-snow-wind" title="day-snow-wind" data-clipboard-text="wi wi-day-snow-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-sprinkle" title="day-sprinkle" data-clipboard-text="wi wi-day-sprinkle"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-storm-showers" title="day-storm-showers" data-clipboard-text="wi wi-day-storm-showers"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-sunny-overcast" title="day-sunny-overcast" data-clipboard-text="wi wi-day-sunny-overcast"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-day-thunderstorm" title="day-thunderstorm" data-clipboard-text="wi wi-day-thunderstorm"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-windy" title="day-windy" data-clipboard-text="wi wi-day-windy"></i></td>
+<td align="center"><i class="wi wi-fw wi-solar-eclipse" title="solar-eclipse" data-clipboard-text="wi wi-solar-eclipse"></i></td>
+<td align="center"><i class="wi wi-fw wi-hot" title="hot" data-clipboard-text="wi wi-hot"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-cloudy-high" title="day-cloudy-high" data-clipboard-text="wi wi-day-cloudy-high"></i></td>
+<td align="center"><i class="wi wi-fw wi-day-light-wind" title="day-light-wind" data-clipboard-text="wi wi-day-light-wind"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="夜晚"><a href="#夜晚" class="headerlink" title="夜晚"></a>夜晚</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-night-clear" title="night-clear" data-clipboard-text="wi wi-night-clear"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-cloudy" title="night-alt-cloudy" data-clipboard-text="wi wi-night-alt-cloudy"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-cloudy-gusts" title="night-alt-cloudy-gusts" data-clipboard-text="wi wi-night-alt-cloudy-gusts"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-cloudy-windy" title="night-alt-cloudy-windy" data-clipboard-text="wi wi-night-alt-cloudy-windy"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-hail" title="night-alt-hail" data-clipboard-text="wi wi-night-alt-hail"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-lightning" title="night-alt-lightning" data-clipboard-text="wi wi-night-alt-lightning"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-rain" title="night-alt-rain" data-clipboard-text="wi wi-night-alt-rain"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-rain-mix" title="night-alt-rain-mix" data-clipboard-text="wi wi-night-alt-rain-mix"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-rain-wind" title="night-alt-rain-wind" data-clipboard-text="wi wi-night-alt-rain-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-showers" title="night-alt-showers" data-clipboard-text="wi wi-night-alt-showers"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-night-alt-sleet" title="night-alt-sleet" data-clipboard-text="wi wi-night-alt-sleet"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-sleet-storm" title="night-alt-sleet-storm" data-clipboard-text="wi wi-night-alt-sleet-storm"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-snow" title="night-alt-snow" data-clipboard-text="wi wi-night-alt-snow"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-snow-thunderstorm" title="night-alt-snow-thunderstorm" data-clipboard-text="wi wi-night-alt-snow-thunderstorm"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-snow-wind" title="night-alt-snow-wind" data-clipboard-text="wi wi-night-alt-snow-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-night-alt-sprinkle" title="night-alt-sprinkle" data-clipboard-text="wi wi-night-alt-sprinkle"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="中性"><a href="#中性" class="headerlink" title="中性"></a>中性</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-cloud" title="cloud" data-clipboard-text="wi wi-cloud"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloudy" title="cloudy" data-clipboard-text="wi wi-cloudy"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloudy-gusts" title="cloudy-gusts" data-clipboard-text="wi wi-cloudy-gusts"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloudy-windy" title="cloudy-windy" data-clipboard-text="wi wi-cloudy-windy"></i></td>
+<td align="center"><i class="wi wi-fw wi-fog" title="fog" data-clipboard-text="wi wi-fog"></i></td>
+<td align="center"><i class="wi wi-fw wi-hail" title="hail" data-clipboard-text="wi wi-hail"></i></td>
+<td align="center"><i class="wi wi-fw wi-rain" title="rain" data-clipboard-text="wi wi-rain"></i></td>
+<td align="center"><i class="wi wi-fw wi-rain-mix" title="rain-mix" data-clipboard-text="wi wi-rain-mix"></i></td>
+<td align="center"><i class="wi wi-fw wi-rain-wind" title="rain-wind" data-clipboard-text="wi wi-rain-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-showers" title="showers" data-clipboard-text="wi wi-showers"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-sleet" title="sleet" data-clipboard-text="wi wi-sleet"></i></td>
+<td align="center"><i class="wi wi-fw wi-snow" title="snow" data-clipboard-text="wi wi-snow"></i></td>
+<td align="center"><i class="wi wi-fw wi-sprinkle" title="sprinkle" data-clipboard-text="wi wi-sprinkle"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloudy" title="cloudy" data-clipboard-text="wi wi-cloudy"></i></td>
+<td align="center"><i class="wi wi-fw wi-thunderstorm" title="thunderstorm" data-clipboard-text="wi wi-thunderstorm"></i></td>
+<td align="center"><i class="wi wi-fw wi-snow-wind" title="snow-wind" data-clipboard-text="wi wi-snow-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-smog" title="smog" data-clipboard-text="wi wi-smog"></i></td>
+<td align="center"><i class="wi wi-fw wi-smog" title="smoke" data-clipboard-text="wi wi-smoke"></i></td>
+<td align="center"><i class="wi wi-fw wi-lightning" title="lightning" data-clipboard-text="wi wi-lightning"></i></td>
+<td align="center"><i class="wi wi-fw wi-raindrops" title="raindrops" data-clipboard-text="wi wi-raindrops"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-raindrop" title="raindrop" data-clipboard-text="wi wi-raindrop"></i></td>
+<td align="center"><i class="wi wi-fw wi-dust" title="dust" data-clipboard-text="wi wi-dust"></i></td>
+<td align="center"><i class="wi wi-fw wi-snowflake-cold" title="snowflake-cold" data-clipboard-text="wi wi-snowflake-cold"></i></td>
+<td align="center"><i class="wi wi-fw wi-windy" title="windy" data-clipboard-text="wi wi-windy"></i></td>
+<td align="center"><i class="wi wi-fw wi-strong-wind" title="strong-wind" data-clipboard-text="wi wi-strong-wind"></i></td>
+<td align="center"><i class="wi wi-fw wi-sandstorm" title="sandstorm" data-clipboard-text="wi wi-sandstorm"></i></td>
+<td align="center"><i class="wi wi-fw wi-earthquake" title="earthquake" data-clipboard-text="wi wi-earthquake"></i></td>
+<td align="center"><i class="wi wi-fw wi-fire" title="fire" data-clipboard-text="wi wi-fire"></i></td>
+<td align="center"><i class="wi wi-fw wi-flood" title="flood" data-clipboard-text="wi wi-flood"></i></td>
+<td align="center"><i class="wi wi-fw wi-meteor" title="meteor" data-clipboard-text="wi wi-meteor"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-tsunami" title="tsunami" data-clipboard-text="wi wi-tsunami"></i></td>
+<td align="center"><i class="wi wi-fw wi-volcano" title="volcano" data-clipboard-text="wi wi-volcano"></i></td>
+<td align="center"><i class="wi wi-fw wi-hurricane" title="hurricane" data-clipboard-text="wi wi-hurricane"></i></td>
+<td align="center"><i class="wi wi-fw wi-tornado" title="tornado" data-clipboard-text="wi wi-tornado"></i></td>
+<td align="center"><i class="wi wi-fw wi-small-craft-advisory" title="small-craft-advisory" data-clipboard-text="wi wi-small-craft-advisory"></i></td>
+<td align="center"><i class="wi wi-fw wi-gale-warning" title="gale-warning" data-clipboard-text="wi wi-gale-warning"></i></td>
+<td align="center"><i class="wi wi-fw wi-storm-warning" title="storm-warning" data-clipboard-text="wi wi-storm-warning"></i></td>
+<td align="center"><i class="wi wi-fw wi-hurricane-warning" title="hurricane-warning" data-clipboard-text="wi wi-hurricane-warning"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-direction" title="wind-direction" data-clipboard-text="wi wi-wind-direction"></i></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-alien" title="alien" data-clipboard-text="wi wi-alien"></i></td>
+<td align="center"><i class="wi wi-fw wi-celsius" title="celsius" data-clipboard-text="wi wi-celsius"></i></td>
+<td align="center"><i class="wi wi-fw wi-fahrenheit" title="fahrenheit" data-clipboard-text="wi wi-fahrenheit"></i></td>
+<td align="center"><i class="wi wi-fw wi-degrees" title="degrees" data-clipboard-text="wi wi-degrees"></i></td>
+<td align="center"><i class="wi wi-fw wi-thermometer" title="thermometer" data-clipboard-text="wi wi-thermometer"></i></td>
+<td align="center"><i class="wi wi-fw wi-thermometer-exterior" title="thermometer-exterior" data-clipboard-text="wi wi-thermometer-exterior"></i></td>
+<td align="center"><i class="wi wi-fw wi-thermometer-internal" title="thermometer-internal" data-clipboard-text="wi wi-thermometer-internal"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloud-down" title="cloud-down" data-clipboard-text="wi wi-cloud-down"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloud-up" title="cloud-up" data-clipboard-text="wi wi-cloud-up"></i></td>
+<td align="center"><i class="wi wi-fw wi-cloud-refresh" title="cloud-refresh" data-clipboard-text="wi wi-cloud-refresh"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-horizon" title="horizon" data-clipboard-text="wi wi-horizon"></i></td>
+<td align="center"><i class="wi wi-fw wi-horizon-alt" title="horizon-alt" data-clipboard-text="wi wi-horizon-alt"></i></td>
+<td align="center"><i class="wi wi-fw wi-sunrise" title="sunrise" data-clipboard-text="wi wi-sunrise"></i></td>
+<td align="center"><i class="wi wi-fw wi-sunset" title="sunset" data-clipboard-text="wi wi-sunset"></i></td>
+<td align="center"><i class="wi wi-fw wi-moonrise" title="moonrise" data-clipboard-text="wi wi-moonrise"></i></td>
+<td align="center"><i class="wi wi-fw wi-moonset" title="moonset" data-clipboard-text="wi wi-moonset"></i></td>
+<td align="center"><i class="wi wi-fw wi-refresh" title="refresh" data-clipboard-text="wi wi-refresh"></i></td>
+<td align="center"><i class="wi wi-fw wi-refresh-alt" title="refresh-alt" data-clipboard-text="wi wi-refresh-alt"></i></td>
+<td align="center"><i class="wi wi-fw wi-umbrella" title="umbrella" data-clipboard-text="wi wi-umbrella"></i></td>
+<td align="center"><i class="wi wi-fw wi-barometer" title="barometer" data-clipboard-text="wi wi-barometer"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-humidity" title="humidity" data-clipboard-text="wi wi-humidity"></i></td>
+<td align="center"><i class="wi wi-fw wi-na" title="na" data-clipboard-text="wi wi-na"></i></td>
+<td align="center"><i class="wi wi-fw wi-train" title="train" data-clipboard-text="wi wi-train"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="月相"><a href="#月相" class="headerlink" title="月相"></a>月相</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-moon-new" title="moon-new" data-clipboard-text="wi wi-moon-new"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-crescent-1" title="moon-waxing-crescent-1" data-clipboard-text="wi wi-moon-waxing-crescent-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-crescent-2" title="moon-waxing-crescent-2" data-clipboard-text="wi wi-moon-waxing-crescent-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-crescent-3" title="moon-waxing-crescent-3" data-clipboard-text="wi wi-moon-waxing-crescent-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-crescent-4" title="moon-waxing-crescent-4" data-clipboard-text="wi wi-moon-waxing-crescent-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-crescent-5" title="moon-waxing-crescent-5" data-clipboard-text="wi wi-moon-waxing-crescent-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-crescent-6" title="moon-waxing-crescent-6" data-clipboard-text="wi wi-moon-waxing-crescent-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-first-quarter" title="moon-first-quarter" data-clipboard-text="wi wi-moon-first-quarter"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-gibbous-1" title="moon-waxing-gibbous-1" data-clipboard-text="wi wi-moon-waxing-gibbous-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-gibbous-2" title="moon-waxing-gibbous-2" data-clipboard-text="wi wi-moon-waxing-gibbous-2"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-gibbous-3" title="moon-waxing-gibbous-3" data-clipboard-text="wi wi-moon-waxing-gibbous-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-gibbous-4" title="moon-waxing-gibbous-4" data-clipboard-text="wi wi-moon-waxing-gibbous-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-gibbous-5" title="moon-waxing-gibbous-5" data-clipboard-text="wi wi-moon-waxing-gibbous-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waxing-gibbous-6" title="moon-waxing-gibbous-6" data-clipboard-text="wi wi-moon-waxing-gibbous-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-full" title="moon-full" data-clipboard-text="wi wi-moon-full"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-gibbous-1" title="moon-waning-gibbous-1" data-clipboard-text="wi wi-moon-waning-gibbous-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-gibbous-2" title="moon-waning-gibbous-2" data-clipboard-text="wi wi-moon-waning-gibbous-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-gibbous-3" title="moon-waning-gibbous-3" data-clipboard-text="wi wi-moon-waning-gibbous-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-gibbous-4" title="moon-waning-gibbous-4" data-clipboard-text="wi wi-moon-waning-gibbous-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-gibbous-5" title="moon-waning-gibbous-5" data-clipboard-text="wi wi-moon-waning-gibbous-5"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-moon-waning-gibbous-6" title="moon-waning-gibbous-6" data-clipboard-text="wi wi-moon-waning-gibbous-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-third-quarter" title="moon-third-quarter" data-clipboard-text="wi wi-moon-third-quarter"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-crescent-1" title="moon-waning-crescent-1" data-clipboard-text="wi wi-moon-waning-crescent-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-crescent-2" title="moon-waning-crescent-2" data-clipboard-text="wi wi-moon-waning-crescent-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-crescent-3" title="moon-waning-crescent-3" data-clipboard-text="wi wi-moon-waning-crescent-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-crescent-4" title="moon-waning-crescent-4" data-clipboard-text="wi wi-moon-waning-crescent-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-crescent-5" title="moon-waning-crescent-5" data-clipboard-text="wi wi-moon-waning-crescent-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-waning-crescent-6" title="moon-waning-crescent-6" data-clipboard-text="wi wi-moon-waning-crescent-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-new" title="moon-alt-new" data-clipboard-text="wi wi-moon-alt-new"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-crescent-1" title="moon-alt-waxing-crescent-1" data-clipboard-text="wi wi-moon-alt-waxing-crescent-1"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-crescent-2" title="moon-alt-waxing-crescent-2" data-clipboard-text="wi wi-moon-alt-waxing-crescent-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-crescent-3" title="moon-alt-waxing-crescent-3" data-clipboard-text="wi wi-moon-alt-waxing-crescent-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-crescent-4" title="moon-alt-waxing-crescent-4" data-clipboard-text="wi wi-moon-alt-waxing-crescent-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-crescent-5" title="moon-alt-waxing-crescent-5" data-clipboard-text="wi wi-moon-alt-waxing-crescent-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-crescent-6" title="moon-alt-waxing-crescent-6" data-clipboard-text="wi wi-moon-alt-waxing-crescent-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-first-quarter" title="moon-alt-first-quarter" data-clipboard-text="wi wi-moon-alt-first-quarter"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-gibbous-1" title="moon-alt-waxing-gibbous-1" data-clipboard-text="wi wi-moon-alt-waxing-gibbous-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-gibbous-2" title="moon-alt-waxing-gibbous-2" data-clipboard-text="wi wi-moon-alt-waxing-gibbous-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-gibbous-3" title="moon-alt-waxing-gibbous-3" data-clipboard-text="wi wi-moon-alt-waxing-gibbous-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-gibbous-4" title="moon-alt-waxing-gibbous-4" data-clipboard-text="wi wi-moon-alt-waxing-gibbous-4"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-gibbous-5" title="moon-alt-waxing-gibbous-5" data-clipboard-text="wi wi-moon-alt-waxing-gibbous-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waxing-gibbous-6" title="moon-alt-waxing-gibbous-6" data-clipboard-text="wi wi-moon-alt-waxing-gibbous-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-full" title="moon-alt-full" data-clipboard-text="wi wi-moon-alt-full"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-gibbous-1" title="moon-alt-waning-gibbous-1" data-clipboard-text="wi wi-moon-alt-waning-gibbous-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-gibbous-2" title="moon-alt-waning-gibbous-2" data-clipboard-text="wi wi-moon-alt-waning-gibbous-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-gibbous-3" title="moon-alt-waning-gibbous-3" data-clipboard-text="wi wi-moon-alt-waning-gibbous-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-gibbous-4" title="moon-alt-waning-gibbous-4" data-clipboard-text="wi wi-moon-alt-waning-gibbous-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-gibbous-5" title="moon-alt-waning-gibbous-5" data-clipboard-text="wi wi-moon-alt-waning-gibbous-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-gibbous-6" title="moon-alt-waning-gibbous-6" data-clipboard-text="wi wi-moon-alt-waning-gibbous-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-third-quarter" title="moon-alt-third-quarter" data-clipboard-text="wi wi-moon-alt-third-quarter"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-crescent-1" title="moon-alt-waning-crescent-1" data-clipboard-text="wi wi-moon-alt-waning-crescent-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-crescent-2" title="moon-alt-waning-crescent-2" data-clipboard-text="wi wi-moon-alt-waning-crescent-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-crescent-3" title="moon-alt-waning-crescent-3" data-clipboard-text="wi wi-moon-alt-waning-crescent-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-crescent-4" title="moon-alt-waning-crescent-4" data-clipboard-text="wi wi-moon-alt-waning-crescent-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-crescent-5" title="moon-alt-waning-crescent-5" data-clipboard-text="wi wi-moon-alt-waning-crescent-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-moon-alt-waning-crescent-6" title="moon-alt-waning-crescent-6" data-clipboard-text="wi wi-moon-alt-waning-crescent-6"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-time-1" title="time-1" data-clipboard-text="wi wi-time-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-2" title="time-2" data-clipboard-text="wi wi-time-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-3" title="time-3" data-clipboard-text="wi wi-time-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-4" title="time-4" data-clipboard-text="wi wi-time-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-5" title="time-5" data-clipboard-text="wi wi-time-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-6" title="time-6" data-clipboard-text="wi wi-time-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-7" title="time-7" data-clipboard-text="wi wi-time-7"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-8" title="time-8" data-clipboard-text="wi wi-time-8"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-9" title="time-9" data-clipboard-text="wi wi-time-9"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-10" title="time-10" data-clipboard-text="wi wi-time-10"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-time-11" title="time-11" data-clipboard-text="wi wi-time-11"></i></td>
+<td align="center"><i class="wi wi-fw wi-time-12" title="time-12" data-clipboard-text="wi wi-time-12"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="箭头"><a href="#箭头" class="headerlink" title="箭头"></a>箭头</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-direction-up" title="direction-up" data-clipboard-text="wi wi-direction-up"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-up-right" title="direction-up-right" data-clipboard-text="wi wi-direction-up-right"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-right" title="direction-right" data-clipboard-text="wi wi-direction-right"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-down-right" title="direction-down-right" data-clipboard-text="wi wi-direction-down-right"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-down" title="direction-down" data-clipboard-text="wi wi-direction-down"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-down-left" title="direction-down-left" data-clipboard-text="wi wi-direction-down-left"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-left" title="direction-left" data-clipboard-text="wi wi-direction-left"></i></td>
+<td align="center"><i class="wi wi-fw wi-direction-up-left" title="direction-up-left" data-clipboard-text="wi wi-direction-up-left"></i></td>
+</tr>
+</tbody></table>
+<h4 id="风度"><a href="#风度" class="headerlink" title="风度"></a>风度</h4><div class="note danger"><p>要显示风度图标，你需要添加 3 个类，即基础图标类，风向图标类，然后添加你要面对的方向：</p>
+<p><code>class=&quot;wi wi-wind torwrds-23-deg&quot;</code></p>
+<p>你必须包含 <a href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/wind.css">weather-iconds-wind.css</a> 样式表才能使用风度图标。</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-wind towards-0-deg" title="towards-0-deg" data-clipboard-text="wi wi-wind towards-0-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-23-deg" title="towards-23-deg" data-clipboard-text="wi wi-wind towards-23-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-45-deg" title="towards-45-deg" data-clipboard-text="wi wi-wind towards-45-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-68-deg" title="towards-68-deg" data-clipboard-text="wi wi-wind towards-68-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-90-deg" title="towards-90-deg" data-clipboard-text="wi wi-wind towards-90-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-113-deg" title="towards-113-deg" data-clipboard-text="wi wi-wind towards-113-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-135-deg" title="towards-135-deg" data-clipboard-text="wi wi-wind towards-135-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-158-deg" title="towards-158-deg" data-clipboard-text="wi wi-wind towards-158-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-180-deg" title="towards-180-deg" data-clipboard-text="wi wi-wind towards-180-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-203-deg" title="towards-203-deg" data-clipboard-text="wi wi-wind towards-203-deg"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind towards-225-deg" title="towards-225-deg" data-clipboard-text="wi wi-wind towards-225-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-248-deg" title="towards-248-deg" data-clipboard-text="wi wi-wind towards-248-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-270-deg" title="towards-270-deg" data-clipboard-text="wi wi-wind towards-270-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-293-deg" title="towards-293-deg" data-clipboard-text="wi wi-wind towards-293-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-313-deg" title="towards-313-deg" data-clipboard-text="wi wi-wind towards-313-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind towards-336-deg" title="towards-336-deg" data-clipboard-text="wi wi-wind towards-336-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-180-deg" title="from-180-deg" data-clipboard-text="wi wi-wind from-180-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-203-deg" title="from-203-deg" data-clipboard-text="wi wi-wind from-203-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-225-deg" title="from-225-deg" data-clipboard-text="wi wi-wind from-225-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-248-deg" title="from-248-deg" data-clipboard-text="wi wi-wind from-248-deg"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind from-270-deg" title="from-270-deg" data-clipboard-text="wi wi-wind from-270-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-293-deg" title="from-293-deg" data-clipboard-text="wi wi-wind from-293-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-313-deg" title="from-313-deg" data-clipboard-text="wi wi-wind from-313-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-336-deg" title="from-336-deg" data-clipboard-text="wi wi-wind from-336-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-0-deg" title="from-0-deg" data-clipboard-text="wi wi-wind from-0-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-23-deg" title="from-23-deg" data-clipboard-text="wi wi-wind from-23-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-45-deg" title="from-45-deg" data-clipboard-text="wi wi-wind from-45-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-68-deg" title="from-68-deg" data-clipboard-text="wi wi-wind from-68-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-90-deg" title="from-90-deg" data-clipboard-text="wi wi-wind from-90-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-113-deg" title="from-113-deg" data-clipboard-text="wi wi-wind from-113-deg"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind from-135-deg" title="from-135-deg" data-clipboard-text="wi wi-wind from-135-deg"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind from-158-deg" title="from-158-deg" data-clipboard-text="wi wi-wind from-158-deg"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="风向"><a href="#风向" class="headerlink" title="风向"></a>风向</h4><div class="note danger"><p>要显示风向图标，你需要添加 3 个类，即基础图标类，风向图标类，然后添加你要面对的方向：</p>
+<p><code>class=&quot;wi wi-wind wi-from-e&quot;</code></p>
+<p>你必须包含 <a href="https://cdn.jsdelivr.net/gh/xlovet/asset/css/weather-icons/wind.css">weather-iconds-wind.css</a> 样式表才能使用风向图标。</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-n" title="towards-n" data-clipboard-text="wi wi-wind wi-towards-n"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-nne" title="towards-nne" data-clipboard-text="wi wi-wind wi-towards-nne"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-ne" title="towards-ne" data-clipboard-text="wi wi-wind wi-towards-ne"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-ene" title="towards-ene" data-clipboard-text="wi wi-wind wi-towards-ene"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-e" title="wi-towards-e" data-clipboard-text="wi wi-wind wi-towards-e"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-ese" title="towards-ese" data-clipboard-text="wi wi-wind wi-towards-ese"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-se" title="towards-se" data-clipboard-text="wi wi-wind wi-towards-se"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-sse" title="towards-sse" data-clipboard-text="wi wi-wind wi-towards-sse"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-s" title="towards-s" data-clipboard-text="wi wi-wind wi-towards-s"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-ssw" title="towards-ssw" data-clipboard-text="wi wi-wind wi-towards-ssw"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-sw" title="towards-sw" data-clipboard-text="wi wi-wind wi-towards-sw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-wsw" title="towards-wsw" data-clipboard-text="wi wi-wind wi-towards-wsw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-w" title="towards-w" data-clipboard-text="wi wi-wind wi-towards-w"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-wnw" title="towards-wnw" data-clipboard-text="wi wi-wind wi-towards-wnw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-nw" title="towards-nw" data-clipboard-text="wi wi-wind wi-towards-nw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-towards-nnw" title="towards-nnw" data-clipboard-text="wi wi-wind wi-towards-nnw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-n" title="from-n" data-clipboard-text="wi wi-wind wi-from-n"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-nne" title="from-nne" data-clipboard-text="wi wi-wind wi-from-nne"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-ne" title="from-ne" data-clipboard-text="wi wi-wind wi-from-ne"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-ene" title="from-ene" data-clipboard-text="wi wi-wind wi-from-ene"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-e" title="from-e" data-clipboard-text="wi wi-wind wi-from-e"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-ese" title="from-ese" data-clipboard-text="wi wi-wind wi-from-ese"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-se" title="from-se" data-clipboard-text="wi wi-wind wi-from-se"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-sse" title="from-sse" data-clipboard-text="wi wi-wind wi-from-sse"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-s" title="from-s" data-clipboard-text="wi wi-wind wi-from-s"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-ssw" title="from-ssw" data-clipboard-text="wi wi-wind wi-from-ssw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-sw" title="from-sw" data-clipboard-text="wi wi-wind wi-from-sw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-wsw" title="from-wsw" data-clipboard-text="wi wi-wind wi-from-wsw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-w" title="from-w" data-clipboard-text="wi wi-wind wi-from-w"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-wnw" title="from-wnw" data-clipboard-text="wi wi-wind wi-from-wnw"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-nw" title="from-nw" data-clipboard-text="wi wi-wind wi-from-nw"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind wi-from-nnw" title="from-nnw" data-clipboard-text="wi wi-wind wi-from-nnw"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h4 id="蒲氏风级"><a href="#蒲氏风级" class="headerlink" title="蒲氏风级"></a>蒲氏风级</h4><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-0" title="wind-beaufort-0" data-clipboard-text="wi wi-wind-beaufort-0"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-1" title="wind-beaufort-1" data-clipboard-text="wi wi-wind-beaufort-1"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-2" title="wind-beaufort-2" data-clipboard-text="wi wi-wind-beaufort-2"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-3" title="wind-beaufort-3" data-clipboard-text="wi wi-wind-beaufort-3"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-4" title="wind-beaufort-4" data-clipboard-text="wi wi-wind-beaufort-4"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-5" title="wind-beaufort-5" data-clipboard-text="wi wi-wind-beaufort-5"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-6" title="wind-beaufort-6" data-clipboard-text="wi wi-wind-beaufort-6"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-7" title="wind-beaufort-7" data-clipboard-text="wi wi-wind-beaufort-7"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-8" title="wind-beaufort-8" data-clipboard-text="wi wi-wind-beaufort-8"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-9" title="wind-beaufort-9" data-clipboard-text="wi wi-wind-beaufort-9"></i></td>
+</tr>
+<tr>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-10" title="wind-beaufort-10" data-clipboard-text="wi wi-wind-beaufort-10"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-11" title="wind-beaufort-11" data-clipboard-text="wi wi-wind-beaufort-11"></i></td>
+<td align="center"><i class="wi wi-fw wi-wind-beaufort-12" title="wind-beaufort-12" data-clipboard-text="wi wi-wind-beaufort-12"></i></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>基本用法</title>
+    <url>/fontawesome/using/index.html</url>
+    <content><![CDATA[<p>你可以使用样式前缀和图标名称将 Font Awesome 图标放置在几乎任何地方。</p>
+<p>Font Awesome 旨在与内联元素一起使用，建议使用一致的 HTML 元素。<code>&lt;i&gt;</code>标签简洁，但是<code>&lt;span&gt;</code>在语义上更准确。你需要知道以下两点才能引用一个图标：</p>
+<ol>
+<li>要使用的相应的样式前缀。</li>
+<li>以<code>fa-</code>为前缀的图标名称；</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 这个图标的样式前缀是 fas，图标名称是 camera --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 使用 i 元素引用图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 使用 span 元素引用图标 --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>样式</th>
+<th>版本</th>
+<th>样式前缀</th>
+<th>效果</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Solid</td>
+<td>免费版</td>
+<td>fas</td>
+<td><i class="fas fa-camera"></td>
+<td><code>&lt;i class=&quot;fas fa-camera&quot;&gt;</code></td>
+</tr>
+<tr>
+<td>Regular</td>
+<td>专业版</td>
+<td>far</td>
+<td><i class="far fa-camera"></td>
+<td><code>&lt;i class=&quot;far fa-camera&quot;&gt;</code></td>
+</tr>
+<tr>
+<td>Light</td>
+<td>专业版</td>
+<td>fal</td>
+<td><i class="fal fa-camera"></td>
+<td><code>&lt;i class=&quot;fal fa-camera&quot;&gt;</code></td>
+</tr>
+<tr>
+<td>Duotone</td>
+<td>专业版</td>
+<td>fad</td>
+<td><i class="fad fa-camera"></td>
+<td><code>&lt;i class=&quot;fad fa-camera&quot;&gt;</code></td>
+</tr>
+<tr>
+<td>Brands</td>
+<td>免费版</td>
+<td>fab</td>
+<td><i class="fab fa-font-awesome"></td>
+<td><code>&lt;i class=&quot;fab fa-font-awesome&quot;&gt;</code></td>
+</tr>
+</tbody></table>
+<div class="note info no-icon"><p><code>fa</code>样式前缀在 5.x 版本中已弃用。新的默认设置是 Solid 的 fas 样式前缀或 Brands 的 fab 样式前缀。</p>
+</div>
+
+<p>Font Awesome 图标会自动继承 CSS 大小和颜色。这意味着无论你将它们放在何处，它们都与内联样式混合在一起。Font Awesome 会尽量不增加复杂的设置，只在上下文中正确呈现基本样式规则。</p>
+<span style="font-size: 3em; color: Tomato;">
+    <i class="fas fa-camera"></i>
+</span>
+<span style="font-size: 48px; color: Dodgerblue;">
+    <i class="fas fa-camera"></i>
+</span>
+<span style="font-size: 3rem;">
+    <span style="color: Mediumslateblue;">
+        <i class="fas fa-camera"></i>
+    </span>
+</span>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 3em; color: Tomato;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 48px; color: Dodgerblue;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 3rem;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: Mediumslateblue;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>你还可以通过在项目代码中添加自己的 CSS 规则，将自己的自定义样式添加到 Font Awesome 图标中。下面是一个简单的例子：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 从 CDN 或你自己下载的文件中引用 Font Awesome --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/fontawesome.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/brands.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/solid.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">        <span class="comment">/* 自定义所有图标样式 */</span></span></span><br><span class="line"><span class="css">        <span class="selector-tag">i</span><span class="selector-class">.fas</span>,</span></span><br><span class="line"><span class="css">        <span class="selector-tag">i</span><span class="selector-class">.fab</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">border</span>: <span class="number">1px</span> solid red;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">​</span></span><br><span class="line"><span class="css">        <span class="comment">/* 自定义特殊图标样式 */</span></span></span><br><span class="line"><span class="css">        <span class="selector-class">.fa-fish</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">color</span>: salmon;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">​</span></span><br><span class="line"><span class="css">        <span class="selector-class">.fa-frog</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">color</span>: green;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">​</span></span><br><span class="line"><span class="css">        <span class="selector-class">.fa-user-ninja</span><span class="selector-class">.vanished</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">opacity</span>: <span class="number">0.0</span>;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">​</span></span><br><span class="line"><span class="css">        <span class="selector-class">.fa-facebook</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="attribute">color</span>: <span class="built_in">rgb</span>(<span class="number">59</span>, <span class="number">91</span>, <span class="number">152</span>);</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-fish&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-frog&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user-ninja vanished&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-facebook&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>样式详解</title>
+    <url>/fontawesome/styling/index.html</url>
+    <content><![CDATA[<h3 id="图标尺寸"><a href="#图标尺寸" class="headerlink" title="图标尺寸"></a>图标尺寸</h3><p>图标继承了其父容器的字体大小，从而使它们可以匹配你所呈现的任何文本。通过以下类，可以相对于继承的<code>font-size</code>增大或减小图标的大小。</p>
+<div style="font-size: 0.5rem">
+    <i class="fas fa-camera fa-xs"></i>
+    <i class="fas fa-camera fa-sm"></i>
+    <i class="fas fa-camera fa-lg"></i>
+    <i class="fas fa-camera fa-2x"></i>
+    <i class="fas fa-camera fa-3x"></i>
+    <i class="fas fa-camera fa-5x"></i>
+    <i class="fas fa-camera fa-7x"></i>
+    <i class="fas fa-camera fa-10x"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 0.5rem&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-xs&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-sm&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-lg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-2x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-3x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-5x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-7x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-10x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>通过在目标图标的项目 CSS 中、或直接在引用图标的 HTML 元素的<code>style</code>属性中设置字体大小，你还可以直接设置图标的大小。</p>
+<table>
+<thead>
+<tr>
+<th>类名</th>
+<th>大小</th>
+<th>类名</th>
+<th>大小</th>
+<th>类名</th>
+<th>大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fa-xs</td>
+<td>.75em</td>
+<td>fa-sm</td>
+<td>.875em</td>
+<td>fa-lg</td>
+<td>1.33em</td>
+</tr>
+<tr>
+<td>fa-2x</td>
+<td>2em</td>
+<td>fa-3x</td>
+<td>3em</td>
+<td>fa-4x</td>
+<td>4em</td>
+</tr>
+<tr>
+<td>fa-5x</td>
+<td>5em</td>
+<td>fa-6x</td>
+<td>6em</td>
+<td>fa-7x</td>
+<td>7em</td>
+</tr>
+<tr>
+<td>fa-8x</td>
+<td>8em</td>
+<td>fa-9x</td>
+<td>9em</td>
+<td>fa-10x</td>
+<td>10em</td>
+</tr>
+</tbody></table>
+<h3 id="固定宽度"><a href="#固定宽度" class="headerlink" title="固定宽度"></a>固定宽度</h3><p>是否需要垂直对齐一系列图标？例如列表或导航菜单中的图标。对于这些情况，Font Awesome 提供了固定宽度的样式。</p>
+<p>在引用你的图标的 HTML 元素上添加<code>fa-fw</code>类，可以将一个或多个图标设置为相同的固定宽度。当更改图标宽度时（例如，宽而短的图标上方有高而瘦的图标）会使得所有图标垂直对齐，这个功能非常有用。为了清晰，下面的示例中，在图标上添加了背景色，以便你可以看到固定的宽度，还可以增大父元素的字体大小。</p>
+<div style="font-size: 1.5rem;">
+    <div><i class="fas fa-skating fa-fw" style="background: DodgerBlue"></i> Skating</div>
+    <div><i class="fas fa-skiing fa-fw" style="background: SkyBlue"></i> Skiing</div>
+    <div><i class="fas fa-skiing-nordic fa-fw" style="background: DodgerBlue"></i> Nordic Skiing</div>
+    <div><i class="fas fa-snowboarding fa-fw" style="background: SkyBlue"></i> Snowboarding</div>
+    <div><i class="fas fa-snowplow fa-fw" style="background: DodgerBlue"></i> Snowplow</div>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 1.5rem;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-skating fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: DodgerBlue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> Skating<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-skiing fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: SkyBlue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> Skiing<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-skiing-nordic fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: DodgerBlue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> Nordic Skiing<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: SkyBlue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> Snowboarding<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowplow fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: DodgerBlue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> Snowplow<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="列表图标"><a href="#列表图标" class="headerlink" title="列表图标"></a>列表图标</h3><p>在固定宽度样式的垂直对齐基础上，Font Awesome 添加了一些实用样式，以处理带有用作装饰项目符号的图标的 HTML 列表。使用<code>fa-ul</code>和<code>fa-li</code>替换无需列表中的默认项目符号。</p>
+<ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+    <li><span class="fa-li"><i class="fas fa-square"></i></span>in lists</li>
+</ul>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;fa-ul&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-li&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-check-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>List icons can<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-li&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-check-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>be used to<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-li&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-spinner fa-pulse&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>replace bullets<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-li&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>in lists<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="旋转图标"><a href="#旋转图标" class="headerlink" title="旋转图标"></a>旋转图标</h3><p>有时你需要旋转、翻转或镜像图标才能在项目或设计中达到期望的效果。Font Awesome 提供了一些快速使用的工具来帮助你解决此问题。若要任意旋转或翻转图标，请在引用图标时使用<code>fa-rotate-*</code>或<code>fa-flip-*</code>类。</p>
+<div class="fa-3x">
+    <i class="fas fa-snowboarding"></i>
+    <i class="fas fa-snowboarding fa-rotate-90"></i>
+    <i class="fas fa-snowboarding fa-rotate-180"></i>
+    <i class="fas fa-snowboarding fa-rotate-270"></i>
+    <i class="fas fa-snowboarding fa-flip-horizontal"></i>
+    <i class="fas fa-snowboarding fa-flip-vertical"></i>
+    <i class="fas fa-snowboarding fa-flip-both"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-rotate-90&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-rotate-180&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-rotate-270&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-flip-horizontal&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-flip-vertical&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-snowboarding fa-flip-both&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="图标动画"><a href="#图标动画" class="headerlink" title="图标动画"></a>图标动画</h3><p>需要旋转加载或状态通信图标吗？Font Awesome 在支持样式中包括了一些基本的动画供你使用。使用<code>fa-spin</code>类可以让任意图标旋转，或者使用<code>fa-pulse</code>使其进行 8 方向旋转。特别适用于<code>fa-spinner</code>和旋转图标类别中的所有内容。</p>
+<div class="fa-3x">
+    <i class="fas fa-spinner fa-spin"></i>
+    <i class="fas fa-circle-notch fa-spin"></i>
+    <i class="fas fa-sync fa-spin"></i>
+    <i class="fas fa-cog fa-spin"></i>
+    <i class="fas fa-spinner fa-pulse"></i>
+    <i class="fas fa-stroopwafel fa-spin"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-spinner fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-circle-notch fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-sync fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-cog fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-spinner fa-pulse&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-stroopwafel fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Font Awesome 一直在努力使图标或搏动时保持完美居中，但是一些浏览器和 Web 字体 + Font Awesome 的 CSS 版本存在问题。这似乎是 Web 字体的普遍问题，而不是 Font Awesome 可以直接解决的。有几种方法可以解决此问题：</p>
+<ul>
+<li>切换框架。切换到带有 JavaScript 版本的 SVG，这样做效果更好。</li>
+<li>设置动画图标的显示。使用<code>display: block;</code>，这似乎对解决此问题有很大帮助。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Brands</title>
+    <url>/fontawesome/icons/brands/index.html</url>
+    <content><![CDATA[<div class="pdf-container" data-target="../pdf/fab.pdf" data-height="800px"></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>Duotone</title>
+    <url>/fontawesome/icons/duotone/index.html</url>
+    <content><![CDATA[<div class="pdf-container" data-target="../pdf/fad.pdf" data-height="800px"></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>Light</title>
+    <url>/fontawesome/icons/light/index.html</url>
+    <content><![CDATA[<div class="pdf-container" data-target="../pdf/fal.pdf" data-height="800px"></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>Regular</title>
+    <url>/fontawesome/icons/regular/index.html</url>
+    <content><![CDATA[<div class="pdf-container" data-target="../pdf/far.pdf" data-height="800px"></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>Solid</title>
+    <url>/fontawesome/icons/solid/index.html</url>
+    <content><![CDATA[<div class="pdf-container" data-target="../pdf/fas.pdf" data-height="800px"></div>
+]]></content>
+  </entry>
+  <entry>
+    <title>图标分层</title>
+    <url>/fontawesome/styling/layering/index.html</url>
+    <content><![CDATA[<div class="note warning"><p>此功能要求你使用 SVG + JS 版本的 Font Awesome。</p>
+</div>
+
+<p>分层是一种将图标和文本在视觉上彼此叠加的新方法，取代了传统的 <a href="../stacking">图标堆叠</a>。通过这种新方法，你可以使用 2 个以上的图标。</p>
+<p>当你不希望显示页面背景时，或者当你想使用多种颜色，在图标上分层放置多个图标或文本，或者在图标上显示计数器时，分层就非常有用。</p>
+<table>
+<thead>
+<tr>
+<th>分层组件</th>
+<th>使用方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>fa-layers</code></td>
+<td>用于包装图标或文字堆叠。你可能还希望添加<code>fa-fw</code>类，以便对齐图层。</td>
+</tr>
+<tr>
+<td>内部图标</td>
+<td>直接在<code>fa-layers</code>元素内添加任意数量的图标，最后一个图标将会显示在最上层。</td>
+</tr>
+<tr>
+<td><code>fa-layers-text</code></td>
+<td>将文本放置在<code>fa-layer</code>元素中的最顶层图标上方。结合<code>data-fa-transform</code>可以完全控制它。</td>
+</tr>
+<tr>
+<td><code>fa-layers-counter</code></td>
+<td>将计数器添加到图标的右上方。可以使用<code>fa-layers-bottom-left</code>、<code>fa-layers-bottom-right</code>、<code>fa-layers-top-left</code>和默认的<code>fa-layers-top-right</code>来定位。溢出的文本将使用省略号截断。</td>
+</tr>
+</tbody></table>
+<div class="fa-4x">
+    <span class="fa-layers fa-fw" style="background: MistyRose;">
+        <i class="fas fa-circle" style="color: Tomato;"></i>
+        <i class="fas fa-times fa-inverse" data-fa-transform="shrink-6"></i>
+    </span>
+​
+    <span class="fa-layers fa-fw" style="background: MistyRose;">
+        <i class="fas fa-bookmark"></i>
+        <i class="fas fa-heart fa-inverse" data-fa-transform="shrink-10 up-2" style="color: Tomato"></i>
+    </span>
+​
+    <span class="fa-layers fa-fw" style="background: MistyRose;">
+        <i class="fas fa-play" data-fa-transform="rotate--90 grow-2"></i>
+        <i class="fas fa-sun fa-inverse" data-fa-transform="shrink-10 up-2"></i>
+        <i class="fas fa-moon fa-inverse" data-fa-transform="shrink-11 down-4.2 left-4"></i>
+        <i class="fas fa-star fa-inverse" data-fa-transform="shrink-11 down-4.2 right-4"></i>
+    </span>
+​
+    <span class="fa-layers fa-fw" style="background: MistyRose;">
+        <i class="fas fa-calendar"></i>
+        <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight: 900;">27</span>
+    </span>
+​
+    <span class="fa-layers fa-fw" style="background: MistyRose;">
+        <i class="fas fa-certificate"></i>
+        <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-11.5 rotate--30" style="font-weight: 900;">NEW</span>
+    </span>
+​
+    <span class="fa-layers fa-fw" style="background: MistyRose;">
+        <i class="fas fa-envelope"></i>
+        <span class="fa-layers-counter" style="background: Tomato;">1,419</span>
+    </span>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-4x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-circle&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: Tomato;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-times fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-6&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-bookmark&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-heart fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-10 up-2&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: Tomato&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-play&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;rotate--90 grow-2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-sun fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-10 up-2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-moon fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-11 down-4.2 left-4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-star fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-11 down-4.2 right-4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-calendar&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers-text fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8 down-3&quot;</span> <span class="attr">style</span>=<span class="string">&quot;font-weight: 900;&quot;</span>&gt;</span>27<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-certificate&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers-text fa-inverse&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-11.5 rotate--30&quot;</span> <span class="attr">style</span>=<span class="string">&quot;font-weight: 900;&quot;</span>&gt;</span>NEW<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">​</span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers fa-fw&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-envelope&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-layers-counter&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: Tomato;&quot;</span>&gt;</span>1,419<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>双色图标</title>
+    <url>/fontawesome/styling/duotone/index.html</url>
+    <content><![CDATA[<p>双色图标就像我们所有其他图标一样使用。最重要的是，它提供了 Font Awesome 中每个图标的双色版本，该图标具有两种不同的颜色。它们非常适合为你项目中的图标添加更多品牌或插画品质。</p>
+<h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>双色图标使用与其他图标相同的语法，并且可以使用其特定前缀（fad）像其他任何图标一样引用。</p>
+<div class="fa-3x">
+    <i class="fad fa-camera"></i>
+    <i class="fad fa-fire-alt"></i>
+    <i class="fad fa-bus-alt"></i>
+    <i class="fad fa-fill-drip"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-camera&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fire-alt&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fill-drip&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="交换图层透明度"><a href="#交换图层透明度" class="headerlink" title="交换图层透明度"></a>交换图层透明度</h3><p>你可以交换每个双色图标图层的默认透明度。这将使图标的主要层的默认不透明度变为 40%。</p>
+<div class="fa-3x">
+    <i class="fad fa-camera fa-swap-opacity"></i>
+    <i class="fad fa-fire-alt fa-swap-opacity"></i>
+    <i class="fad fa-bus-alt fa-swap-opacity"></i>
+    <i class="fad fa-fill-drip fa-swap-opacity"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-camera fa-swap-opacity&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fire-alt fa-swap-opacity&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt fa-swap-opacity&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fill-drip fa-swap-opacity&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a class="btn" href="demo/01">更多示例 >></a>
+
+<h3 id="改变透明度"><a href="#改变透明度" class="headerlink" title="改变透明度"></a>改变透明度</h3><p>默认情况下，双色图标中的辅助图层设为 40% 不透明度（通过 Font Awesome 支持 CSS 规则<code>opacity: 0.4;</code>）。你可以使用下面的 CSS 自定义属性来明确设置双色图标图层的透明度。</p>
+<table>
+<thead>
+<tr>
+<th>样式属性</th>
+<th>描述</th>
+<th>可用值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>–fa-primary-opacity</td>
+<td>设置主要图层透明度</td>
+<td>0 ~ 1.0</td>
+</tr>
+<tr>
+<td>–fa-secondary-opacity</td>
+<td>设置次要图层透明度</td>
+<td>0 ~ 1.0</td>
+</tr>
+</tbody></table>
+<div class="fa-3x">
+    <i class="fad fa-bus-alt" style="--fa-primary-opacity: 0.2;"></i>
+    <i class="fad fa-bus-alt" style="--fa-primary-opacity: 0.4;"></i>
+    <i class="fad fa-bus-alt" style="--fa-primary-opacity: 0.6;"></i>
+    <i class="fad fa-bus-alt" style="--fa-primary-opacity: 0.8;"></i>
+    <i class="fad fa-bus-alt" style="--fa-primary-opacity: 1.0;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-opacity: 0.2;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-opacity: 0.4;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-opacity: 0.6;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-opacity: 0.8;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="fa-3x">
+    <i class="fad fa-bus-alt" style="--fa-secondary-opacity: 0.2;"></i>
+    <i class="fad fa-bus-alt" style="--fa-secondary-opacity: 0.4;"></i>
+    <i class="fad fa-bus-alt" style="--fa-secondary-opacity: 0.6;"></i>
+    <i class="fad fa-bus-alt" style="--fa-secondary-opacity: 0.8;"></i>
+    <i class="fad fa-bus-alt" style="--fa-secondary-opacity: 1.0;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.2;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.4;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.6;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.8;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a class="btn" href="demo/02">更多示例 >></a>
+
+<h3 id="为双色图标着色"><a href="#为双色图标着色" class="headerlink" title="为双色图标着色"></a>为双色图标着色</h3><p>像所有其他 Font Awesome 图标一样，双色图标会自动继承 CSS 大小和颜色。双色图标有主要图层和次要图层组成。默认情况下，次要图层的不透明度为 40%，因此它会以浅色显示。</p>
+<table>
+<thead>
+<tr>
+<th>样式属性</th>
+<th>描述</th>
+<th>可用值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>–fa-primary-color</td>
+<td>设置主要图层颜色</td>
+<td>任何 CSS 颜色值</td>
+</tr>
+<tr>
+<td>–fa-secondary-color</td>
+<td>设置次要图层颜色</td>
+<td>任何 CSS 颜色值</td>
+</tr>
+</tbody></table>
+<div class="fa-3x">
+    <i class="fad fa-bus-alt" style="--fa-primary-color: gold;"></i>
+    <i class="fad fa-bus-alt" style="--fa-primary-color: orangered;"></i>
+    <i class="fad fa-fill-drip" style="--fa-secondary-color: limegreen;"></i>
+    <i class="fad fa-fill-drip" style="--fa-secondary-color: rebeccapurple;"></i>
+    <i class="fad fa-battery-full" style="--fa-primary-color: limegreen; --fa-secondary-color: dimgray;"></i>
+    <i class="fad fa-battery-quarter" style="--fa-primary-color: orange; --fa-secondary-color: dimgray;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: gold;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-bus-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: orangered;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fill-drip&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-color: limegreen;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fill-drip&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-color: rebeccapurple;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-battery-full&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: limegreen; --fa-secondary-color: dimgray;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-battery-quarter&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: orange; --fa-secondary-color: dimgray;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a class="btn" href="demo/03">更多示例 >></a>
+
+<h3 id="进阶使用"><a href="#进阶使用" class="headerlink" title="进阶使用"></a>进阶使用</h3><p>当你将所有的着色、不透明度和其他选项组合在一起时，Font Awesome 图标将变得更赞。这里有一些想法关于如何使用双色图标将你的项目提升到一个新的水平。</p>
+<p><strong>使用颜色突出图标的一部分或注释状态：</strong></p>
+<div class="fa-3x">
+    <i class="fad fa-book" style="--fa-primary-color: lightseagreen; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-book-spells" style="--fa-primary-color: mediumpurple; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-book-medical" style="--fa-primary-color: crimson; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-book-user" style="--fa-primary-color: peru; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-toggle-off" style="--fa-primary-color: white; --fa-secondary-color: gray; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-toggle-on" style="--fa-primary-color: dodgerblue; --fa-secondary-color: white; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-file-plus" style="--fa-primary-color: white; --fa-secondary-color: limegreen; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-file-exclamation" style="--fa-primary-color: white; --fa-secondary-color: gold; --fa-secondary-opacity: 1.0;"></i>
+    <i class="fad fa-file-times" style="--fa-primary-color: white; --fa-secondary-color: tomato; --fa-secondary-opacity: 1.0;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-book&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: lightseagreen; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-book-spells&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: mediumpurple; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-book-medical&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: crimson; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-book-user&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: peru; --fa-secondary-color: linen; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-toggle-off&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: white; --fa-secondary-color: gray; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-toggle-on&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: dodgerblue; --fa-secondary-color: white; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-file-plus&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: white; --fa-secondary-color: limegreen; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-file-exclamation&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: white; --fa-secondary-color: gold; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-file-times&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: white; --fa-secondary-color: tomato; --fa-secondary-opacity: 1.0;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>创建看起来像插图的全彩图标：</strong></p>
+<div class="fa-3x">
+    <i class="fad fa-crow" style="--fa-secondary-opacity: 1.0; --fa-primary-color: dodgerblue; --fa-secondary-color: gold;"></i>
+    <i class="fad fa-campfire" style="--fa-secondary-opacity: 1.0; --fa-primary-color: sienna; --fa-secondary-color: red;"></i>
+    <i class="fad fa-birthday-cake" style="--fa-secondary-opacity: 1.0; --fa-primary-color: pink; --fa-secondary-color: palevioletred;"></i>
+    <i class="fad fa-ear" style="--fa-secondary-opacity: 1.0; --fa-primary-color: sandybrown; --fa-secondary-color: bisque;"></i>
+    <i class="fad fa-corn" style="--fa-secondary-opacity: 1.0; --fa-primary-color: mediumseagreen; --fa-secondary-color: gold;"></i>
+    <i class="fad fa-cookie-bite" style="--fa-secondary-opacity: 1.0; --fa-primary-color: saddlebrown; --fa-secondary-color: burlywood;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-crow&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0; --fa-primary-color: dodgerblue; --fa-secondary-color: gold;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-campfire&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0; --fa-primary-color: sienna; --fa-secondary-color: red;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-birthday-cake&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0; --fa-primary-color: pink; --fa-secondary-color: palevioletred;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-ear&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0; --fa-primary-color: sandybrown; --fa-secondary-color: bisque;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-corn&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0; --fa-primary-color: mediumseagreen; --fa-secondary-color: gold;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-cookie-bite&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0; --fa-primary-color: saddlebrown; --fa-secondary-color: burlywood;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a class="btn" href="demo/04">更多示例 >></a>
+
+<p></p>
+
+<p><strong>带有品牌视觉色彩的主题图标：</strong></p>
+<div class="fa-3x">
+    <style scoped>
+        .theme-ravenclaw {
+            --fa-secondary-opacity: 1.0;
+            --fa-primary-color: rgb(4, 56, 161);
+            --fa-secondary-color: rgb(108, 108, 108);
+        }
+    </style>
+    <i class="fad fa-hat-wizard theme-ravenclaw"></i>
+    <i class="fad fa-flask-potion theme-ravenclaw"></i>
+    <i class="fad fa-wand-magic theme-ravenclaw"></i>
+    <i class="fad fa-scarf theme-ravenclaw"></i>
+    <i class="fad fa-book-spells theme-ravenclaw"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">        <span class="selector-class">.theme-ravenclaw</span> &#123;</span></span><br><span class="line"><span class="css">            --fa-secondary-<span class="attribute">opacity</span>: <span class="number">1.0</span>;</span></span><br><span class="line"><span class="css">            --fa-primary-<span class="attribute">color</span>: <span class="built_in">rgb</span>(<span class="number">4</span>, <span class="number">56</span>, <span class="number">161</span>);</span></span><br><span class="line"><span class="css">            --fa-secondary-<span class="attribute">color</span>: <span class="built_in">rgb</span>(<span class="number">108</span>, <span class="number">108</span>, <span class="number">108</span>);</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-hat-wizard theme-ravenclaw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-flask-potion theme-ravenclaw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-wand-magic theme-ravenclaw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-scarf theme-ravenclaw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-book-spells theme-ravenclaw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="fa-3x">
+    <style scoped>
+        .holiday {
+            --fa-primary-color: green;
+            --fa-secondary-color: red;
+        }
+    </style>
+    <i class="fad fa-holly-berry holiday"></i>
+    <i class="fad fa-wreath holiday"></i>
+    <i class="fad fa-candy-cane holiday"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">        <span class="selector-class">.holiday</span> &#123;</span></span><br><span class="line"><span class="css">            --fa-primary-<span class="attribute">color</span>: green;</span></span><br><span class="line"><span class="css">            --fa-secondary-<span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-holly-berry holiday&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-wreath holiday&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-candy-cane holiday&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<div class="note warning"><p>由于双色图标在视觉上更为复杂，因此在较小的尺寸下可能更难读取。fa-2x 是一个很好的起点。</p>
+</div>
+
+<div class="note danger"><p>双色图标在所有现代 Web 浏览器中都非常出色。由于 IE（10 和 11）不支持 CSS 自定义属性，因此，虽然双色图标仍可以在该浏览器中显示，但是你无法定义各个图层的颜色或透明度。</p>
+</div>
+]]></content>
+  </entry>
+  <entry>
+    <title>图标遮罩</title>
+    <url>/fontawesome/styling/masking/index.html</url>
+    <content><![CDATA[<div class="note warning"><p>此功能要求你使用 SVG + JS 版本的 Font Awesome。</p>
+</div>
+
+<p>借助 Font Awesome 5 中 SVG 的强大功能，将两个图标结合起来可以创建一种单色形状！将其与 <a href="../transforms">强化变形</a> 结合使用可以产生一些非常棒的效果。当你想要显示背景色时，遮罩非常有用。</p>
+<table>
+<thead>
+<tr>
+<th>遮罩组件</th>
+<th>使用方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内部图标（空心）</td>
+<td>使用 class 属性设置图标名称，然后使用任意<code>data-fa-transform</code>属性进行变化。</td>
+</tr>
+<tr>
+<td>外部图标（遮罩）</td>
+<td>使用内部图标上的<code>data-fa-mask</code>属性设置用作遮罩的图标名称。</td>
+</tr>
+</tbody></table>
+<div class="fa-4x">
+    <i class="fas fa-pencil-alt" data-fa-transform="shrink-10 up-.5" data-fa-mask="fas fa-comment" style="background: MistyRose;"></i>
+    <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle" style="background: MistyRose;"></i>
+    <i class="fas fa-headphones" data-fa-transform="shrink-6" data-fa-mask="fas fa-square" style="background: MistyRose;"></i>
+    <i class="fas fa-mask" data-fa-transform="shrink-3 up-1" data-fa-mask="fas fa-circle" style="background: MistyRose;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-4x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-pencil-alt&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-10 up-.5&quot;</span> <span class="attr">data-fa-mask</span>=<span class="string">&quot;fas fa-comment&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-facebook-f&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-3.5 down-1.6 right-1.25&quot;</span> <span class="attr">data-fa-mask</span>=<span class="string">&quot;fas fa-circle&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-headphones&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-6&quot;</span> <span class="attr">data-fa-mask</span>=<span class="string">&quot;fas fa-square&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-mask&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-3 up-1&quot;</span> <span class="attr">data-fa-mask</span>=<span class="string">&quot;fas fa-circle&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>强化变形</title>
+    <url>/fontawesome/styling/transforms/index.html</url>
+    <content><![CDATA[<div class="note warning"><p>此功能要求你使用 SVG + JS 版本的 Font Awesome。</p>
+</div>
+
+<p>借助 Font Awesome 5 中的 SVG 强大功能，现在你可以使用<code>data-fa-transform</code>元素属性任意缩放、定位、翻转和旋转图标。你甚至可以将它们组合起来以获得一些超级有用的效果。</p>
+<h3 id="缩放比例"><a href="#缩放比例" class="headerlink" title="缩放比例"></a>缩放比例</h3><p>强化变形的缩放会影响图标大小，而无需更改或移动容器。要按比例放大或缩小图标，请使用带有任意值（包括小数）的<code>grow-#</code>和<code>shrink-#</code>。单位是 1/16em。</p>
+<div class="fa-3x">
+    <i class="fas fa-seedling" data-fa-transform="shrink-8" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="grow-6" style="background: MistyRose;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;grow-6&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><p>强化变形的位置会影响图标的位置，而无需更改或移动容器。要向上下左右移动图标，请使用<code>up-#</code>、<code>down-#</code>、<code>left-#</code>和<code>right-#</code>及其任意值，包括小数，单位是 1/16em。</p>
+<div class="fa-3x">
+    <i class="fas fa-seedling" data-fa-transform="shrink-8" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="shrink-8 up-6" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="shrink-8 right-6" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="shrink-8 down-6" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="shrink-8 left-6" style="background: MistyRose;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8 up-6&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8 right-6&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8 down-6&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;shrink-8 left-6&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="旋转和翻转"><a href="#旋转和翻转" class="headerlink" title="旋转和翻转"></a>旋转和翻转</h3><p>强化变形的旋转和翻转会影响图标的角度和反射，而无需更改或移动容器。要旋转或翻转图标，请使用带有任意值的<code>rotation-#</code>、<code>flip-v</code>和<code>flip-h</code>的任意组合。单位是允许带负数的度数。</p>
+<div class="fa-3x">
+    <i class="fas fa-seedling" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="rotate-90" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="rotate-180" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="rotate-270" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="rotate-30" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="rotate--30" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="flip-v" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="flip-h" style="background: MistyRose;"></i>
+    <i class="fas fa-seedling" data-fa-transform="flip-v flip-h" style="background: MistyRose;"></i>
+</div>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fa-3x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;rotate-90&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;rotate-180&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;rotate-270&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;rotate-30&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;rotate--30&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;flip-v&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;flip-h&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-seedling&quot;</span> <span class="attr">data-fa-transform</span>=<span class="string">&quot;flip-v flip-h&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background: MistyRose;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>图标堆叠</title>
+    <url>/fontawesome/styling/stacking/index.html</url>
+    <content><![CDATA[<p>你可以通过 Font Awesome 附带支持样式轻松地堆叠图标。要堆叠多个图标，请在要堆叠的 2 个图标的父 HTML 元素上使用<code>fa-stack</code>类。然后为常规尺寸的图标添加<code>fa-stack-1x</code>类，为较大的图标添加<code>fa-stack-2x</code>类。</p>
+<p><code>fa-inverse</code>类可以与<code>fa-stack-1x</code>一起添加到图标中，以实现挖空效果。你甚至可以在父级上使用较大的图标类，以进一步控制大小。</p>
+<span class="fa-layers fa-4x">
+    <i class="fas fa-square"></i>
+    <i class="fab fa-twitter fa-inverse" data-fa-transform="shrink-6"></i>
+</span>
+<span class="fa-layers fa-4x">
+    <i class="far fa-circle"></i>
+    <i class="fas fa-flag" data-fa-transform="shrink-8"></i>
+</span>
+<span class="fa-layers fa-4x">
+    <i class="fas fa-camera" data-fa-transform="shrink-6"></i>
+    <i class="fal fa-ban" style="color: Tomato"></i>
+</span>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-stack fa-2x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-square fa-stack-2x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-twitter fa-stack-1x fa-inverse&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-stack fa-2x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-circle fa-stack-2x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-flag fa-stack-1x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;fa-stack fa-2x&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-camera fa-stack-1x&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fal fa-ban fa-stack-2x&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: Tomato&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>交换图层透明度</title>
+    <url>/fontawesome/styling/duotone/demo/01.html</url>
+    <content><![CDATA[<div class="tabs" id="demo"><ul class="nav-tabs"><li class="tab active"><a href="#demo-1">效果</a></li><li class="tab"><a href="#demo-2">HTML</a></li><li class="tab"><a href="#demo-3">CSS</a></li></ul><div class="tab-content"><div class="tab-pane active" id="demo-1"><div class="demo fa-4x">
+  <style scoped>
+    .fa-user-headset { color: deepskyblue; }
+    .fa-stars { color: gold; }
+    .fa-sunglasses { color: darkslategray; }
+    .fa-envelope-open-text { color: mediumaquamarine; }
+    .fa-meteor { color: slateblue; }
+    .demo { text-align: center; }
+  </style>
+  <div>
+    <i class="fad fa-fw fa-user-headset"></i>
+    <i class="fad fa-fw fa-stars"></i>
+    <i class="fad fa-fw fa-sunglasses"></i>
+    <i class="fad fa-fw fa-envelope-open-text"></i>
+    <i class="fad fa-fw fa-meteor"></i>
+  </div>
+  <div>
+    <i class="fad fa-fw fa-swap-opacity fa-user-headset"></i>
+    <i class="fad fa-fw fa-swap-opacity fa-stars"></i>
+    <i class="fad fa-fw fa-swap-opacity fa-sunglasses"></i>
+    <i class="fad fa-fw fa-swap-opacity fa-envelope-open-text"></i>
+    <i class="fad fa-fw fa-swap-opacity fa-meteor"></i>
+  </div>
+</div></div><div class="tab-pane" id="demo-2"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-user-headset&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-stars&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-sunglasses&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-envelope-open-text&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-meteor&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-swap-opacity fa-user-headset&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-swap-opacity fa-stars&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-swap-opacity fa-sunglasses&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-swap-opacity fa-envelope-open-text&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-swap-opacity fa-meteor&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="demo-3"><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.fa-user-headset</span> &#123; <span class="attribute">color</span>: deepskyblue; &#125;</span><br><span class="line"><span class="selector-class">.fa-stars</span> &#123; <span class="attribute">color</span>: gold; &#125;</span><br><span class="line"><span class="selector-class">.fa-sunglasses</span> &#123; <span class="attribute">color</span>: darkslategray; &#125;</span><br><span class="line"><span class="selector-class">.fa-envelope-open-text</span> &#123; <span class="attribute">color</span>: mediumaquamarine; &#125;</span><br><span class="line"><span class="selector-class">.fa-meteor</span> &#123; <span class="attribute">color</span>: slateblue; &#125;</span><br></pre></td></tr></table></figure></div></div></div>
+
+<a class="btn" href="../#交换图层透明度">返回</a>
+]]></content>
+  </entry>
+  <entry>
+    <title>改变透明度</title>
+    <url>/fontawesome/styling/duotone/demo/02.html</url>
+    <content><![CDATA[<div class="tabs" id="demo"><ul class="nav-tabs"><li class="tab active"><a href="#demo-1">效果</a></li><li class="tab"><a href="#demo-2">HTML</a></li><li class="tab"><a href="#demo-3">CSS</a></li></ul><div class="tab-content"><div class="tab-pane active" id="demo-1"><div class="demo fa-4x">
+  <style scoped>
+    :root {
+      --fa-primary-color: rgb(188, 110, 53);
+      --fa-secondary-color: rgb(244, 160, 0);
+    }
+    .demo { text-align: center; }
+  </style>
+  <div>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 1.0"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.9"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.8"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.7"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.6"></i>
+  </div>
+  <div>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.5"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.4"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.3"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.2"></i>
+    <i class="fad fa-fw fa-pizza" style="--fa-secondary-opacity: 0.1"></i>
+  </div>
+</div></div><div class="tab-pane" id="demo-2"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 1.0&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.9&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.7&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.6&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.5&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.3&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.2&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-pizza&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-secondary-opacity: 0.1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="demo-3"><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  --fa-primary-<span class="attribute">color</span>: <span class="built_in">rgb</span>(<span class="number">188</span>, <span class="number">110</span>, <span class="number">53</span>);</span><br><span class="line">  --fa-secondary-<span class="attribute">color</span>: <span class="built_in">rgb</span>(<span class="number">244</span>, <span class="number">160</span>, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div></div>
+
+<a class="btn" href="../#改变透明度">返回</a>
+]]></content>
+  </entry>
+  <entry>
+    <title>为双色图标着色</title>
+    <url>/fontawesome/styling/duotone/demo/03.html</url>
+    <content><![CDATA[<div class="tabs" id="demo"><ul class="nav-tabs"><li class="tab active"><a href="#demo-1">效果</a></li><li class="tab"><a href="#demo-2">HTML</a></li></ul><div class="tab-content"><div class="tab-pane active" id="demo-1"><div class="demo fa-4x">
+  <style scoped>
+    .demo { text-align: center; }
+  </style>
+  <div>
+    <i class="fad fa-fw fa-apple-alt" style="color: red;"></i>
+    <i class="fad fa-fw fa-acorn" style="color: sienna;"></i>
+    <i class="fad fa-fw fa-award" style="color: dodgerblue;"></i>
+    <i class="fad fa-fw fa-bacon" style="color: lightcoral;"></i>
+    <i class="fad fa-fw fa-camera-retro" style="color: slategray;"></i>
+  </div>
+  <div>
+    <i class="fad fa-fw fa-biohazard" style="color: darkorange;"></i>
+    <i class="fad fa-fw fa-sticky-note" style="color: gold;"></i>
+    <i class="fad fa-fw fa-disease" style="color: darkseagreen;"></i>
+    <i class="fad fa-fw fa-draw-polygon" style="color: lightskyblue;"></i>
+    <i class="fad fa-fw fa-dragon" style="color: olivedrab;"></i>
+  </div>
+</div></div><div class="tab-pane" id="demo-2"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-apple-alt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: red;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-acorn&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: sienna;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-award&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: dodgerblue;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-bacon&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: lightcoral;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-camera-retro&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: slategray;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-biohazard&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: darkorange;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-sticky-note&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: gold;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-disease&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: darkseagreen;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-draw-polygon&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: lightskyblue;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-dragon&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: olivedrab;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div></div></div>
+
+<a class="btn" href="../#为双色图标着色">返回</a>
+]]></content>
+  </entry>
+  <entry>
+    <title>进阶使用</title>
+    <url>/fontawesome/styling/duotone/demo/04.html</url>
+    <content><![CDATA[<div class="tabs" id="demo"><ul class="nav-tabs"><li class="tab active"><a href="#demo-1">效果</a></li><li class="tab"><a href="#demo-2">HTML</a></li><li class="tab"><a href="#demo-3">CSS</a></li></ul><div class="tab-content"><div class="tab-pane active" id="demo-1"><div class="demo fa-4x">
+  <style scoped>
+    :root {--fa-secondary-opacity: 1.0;}
+    .demo { text-align: center; }
+  </style>
+  <div>
+    <i class="fad fa-fw fa-coffee-togo" style="--fa-primary-color: rgb(225, 19, 131); --fa-secondary-color: rgb(245, 130, 31);"></i>
+    <i class="fad fa-fw fa-shipping-fast" style="--fa-primary-color: rgb(83, 63, 49); --fa-secondary-color: rgb(52, 58, 64);"></i>
+    <i class="fad fa-fw fa-french-fries" style="--fa-primary-color: rgb(218, 41, 28); --fa-secondary-color: rgb(255, 199, 43);"></i>
+    <i class="fad fa-fw fa-tractor" style="--fa-primary-color: rgb(54, 124, 42); --fa-secondary-color: rgb(255, 209, 0);"></i>
+    <i class="fad fa-fw fa-coffee-togo" style="--fa-primary-color: antiquewhite; --fa-secondary-color: rgb(5, 118, 85);"></i>
+  </div>
+  <div>
+    <i class="fad fa-fw fa-route-highway" style="--fa-primary-color: rgb(240, 62, 61); --fa-secondary-color: rgb(24, 100, 171);"></i>
+    <i class="fad fa-fw fa-dog-leashed" style="--fa-primary-color: rgb(173, 181, 189); --fa-secondary-color: rgb(224, 49, 48);"></i>
+    <i class="fad fa-fw fa-crow" style="--fa-primary-color: rgb(50, 154, 240); --fa-secondary-color: rgb(255, 212, 59);"></i>
+    <i class="fad fa-fw fa-turtle" style="--fa-primary-color: rgb(43, 138, 62); --fa-secondary-color: rgb(170, 227, 75);"></i>
+    <i class="fad fa-fw fa-basketball-ball" style="--fa-primary-color: rgb(32, 37, 40); --fa-secondary-color: rgb(252, 126, 20);"></i>
+  </div>
+  <div>
+    <i class="fad fa-fw fa-motorcycle" style="--fa-primary-color: rgb(134, 142, 150); --fa-secondary-color: rgb(52, 58, 64);"></i>
+    <i class="fad fa-fw fa-luchador" style="--fa-primary-color: rgb(24, 100, 171); --fa-secondary-color: rgb(240, 62, 61);"></i>
+    <i class="fad fa-fw fa-burrito" style="--fa-primary-color: rgb(139, 69, 19); --fa-secondary-color: rgb(244, 222, 179);"></i>
+    <i class="fad fa-fw fa-globe-snow" style="--fa-primary-color: rgb(11, 146, 104); --fa-secondary-color: rgb(165, 216, 255);"></i>
+    <i class="fad fa-fw fa-sleigh" style="--fa-primary-color: rgb(201, 42, 42); --fa-secondary-color: rgb(255, 212, 59);"></i>
+  </div>
+</div></div><div class="tab-pane" id="demo-2"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-coffee-togo&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(225, 19, 131); --fa-secondary-color: rgb(245, 130, 31);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-shipping-fast&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(83, 63, 49); --fa-secondary-color: rgb(52, 58, 64);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-french-fries&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(218, 41, 28); --fa-secondary-color: rgb(255, 199, 43);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-tractor&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(54, 124, 42); --fa-secondary-color: rgb(255, 209, 0);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-coffee-togo&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: antiquewhite; --fa-secondary-color: rgb(5, 118, 85);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-route-highway&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(240, 62, 61); --fa-secondary-color: rgb(24, 100, 171);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-dog-leashed&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(173, 181, 189); --fa-secondary-color: rgb(224, 49, 48);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-crow&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(50, 154, 240); --fa-secondary-color: rgb(255, 212, 59);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-turtle&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(43, 138, 62); --fa-secondary-color: rgb(170, 227, 75);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-basketball-ball&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(32, 37, 40); --fa-secondary-color: rgb(252, 126, 20);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-motorcycle&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(134, 142, 150); --fa-secondary-color: rgb(52, 58, 64);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-luchador&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(24, 100, 171); --fa-secondary-color: rgb(240, 62, 61);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-burrito&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(139, 69, 19); --fa-secondary-color: rgb(244, 222, 179);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-globe-snow&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(11, 146, 104); --fa-secondary-color: rgb(165, 216, 255);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fad fa-fw fa-sleigh&quot;</span> <span class="attr">style</span>=<span class="string">&quot;--fa-primary-color: rgb(201, 42, 42); --fa-secondary-color: rgb(255, 212, 59);&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="demo-3"><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;--fa-secondary-<span class="attribute">opacity</span>: <span class="number">1.0</span>;&#125;</span><br></pre></td></tr></table></figure></div></div></div>
+
+<a class="btn" href="../#进阶使用">返回</a>
+]]></content>
+  </entry>
+</search>

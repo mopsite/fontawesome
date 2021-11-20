@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/fontawesome/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/fontawesome/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/fontawesome/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/fontawesome/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/fontawesome/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"mopsite.github.io","root":"/fontawesome/","images":"/fontawesome/images","scheme":"Gemini","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/fontawesome/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/fontawesome/js/config.js"></script>
+<meta name="description" content="如果你在一个代码库中有多个站点或应用程序，或者你想自定义 Font Awesome 的某些部分，那么自己 下载 和托管 Font Awesome 则非常实用。 你的下载包含了些什么面向 Web 的 Font Awesome 软件包包含了以下目录和文件：    Files &amp; Folders What They Are Where You Should Start    &#x2F;css Web 字">
+<meta property="og:type" content="website">
+<meta property="og:title" content="开始使用">
+<meta property="og:url" content="https://mopsite.github.io/fontawesome/starting/index.html">
+<meta property="og:site_name" content="Font Awesome">
+<meta property="og:description" content="如果你在一个代码库中有多个站点或应用程序，或者你想自定义 Font Awesome 的某些部分，那么自己 下载 和托管 Font Awesome 则非常实用。 你的下载包含了些什么面向 Web 的 Font Awesome 软件包包含了以下目录和文件：    Files &amp; Folders What They Are Where You Should Start    &#x2F;css Web 字">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-10-28T11:51:40.000Z">
+<meta property="article:modified_time" content="2021-11-20T03:09:16.254Z">
+<meta property="article:author" content="Font Awesome">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://mopsite.github.io/fontawesome/starting/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://mopsite.github.io/fontawesome/starting/index.html","path":"starting/index.html","title":"开始使用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>开始使用 | Font Awesome
+</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/fontawesome/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/fontawesome/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Font Awesome</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-开始使用"><a href="/fontawesome/starting/" rel="section"><i class="far fa-cog fa-fw"></i>开始使用</a></li>
+        <li class="menu-item menu-item-基本用法"><a href="/fontawesome/using/" rel="section"><i class="far fa-anchor fa-fw"></i>基本用法</a></li>
+        
+            
+  <li class="menu-item menu-item-样式详解"><a href="/fontawesome/styling/" rel="section"><i class="far fa-palette fa-fw"></i>样式详解</a></li>
+
+
+      
+        
+            
+  <li class="menu-item menu-item-图标列表"><a href="/fontawesome/icons/" rel="section"><i class="far fa-icons fa-fw"></i>图标列表</a></li>
+
+
+      
+        <li class="menu-item menu-item-天气主题"><a href="/fontawesome/weather/" rel="section"><i class="far fa-cloud fa-fw"></i>天气主题</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="far fa-search fa-fw"></i>本地搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%A0%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%8C%85%E5%90%AB%E4%BA%86%E4%BA%9B%E4%BB%80%E4%B9%88"><span class="nav-number">1.</span> <span class="nav-text">你的下载包含了些什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Web-%E5%AD%97%E4%BD%93%E7%9A%84-CSS"><span class="nav-number">2.</span> <span class="nav-text">使用 Web 字体的 CSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SVG-%E4%B8%8E-JavaScript-%E7%BB%93%E5%90%88"><span class="nav-number">3.</span> <span class="nav-text">SVG 与 JavaScript 结合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%85%E4%BD%BF%E7%94%A8%E6%9F%90%E4%BA%9B%E6%A0%B7%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">仅使用某些样式</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Font Awesome"
+      src="/fontawesome/images/avatar.svg">
+  <p class="site-author-name" itemprop="name">Font Awesome</p>
+  <div class="site-description" itemprop="description">网络上最流行的图标集和工具包</div>
+</div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title">
+      
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://mopsite.github.io/git" title="https:&#x2F;&#x2F;mopsite.github.io&#x2F;git">Git</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://mopsite.github.io/hexo" title="https:&#x2F;&#x2F;mopsite.github.io&#x2F;hexo">Hexo</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://mopsite.github.io/next" title="https:&#x2F;&#x2F;mopsite.github.io&#x2F;next">NexT</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+  
+
+      
+      
+
+      
+      
+  
+
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">开始使用
+</h1>
+
+<div class="post-meta-container">
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p>如果你在一个代码库中有多个站点或应用程序，或者你想自定义 Font Awesome 的某些部分，那么自己 <a target="_blank" rel="noopener" href="https://gitee.com/megaminx/asset/raw/master/fontawesome/fa-5.15.4.rar">下载</a> 和托管 Font Awesome 则非常实用。</p>
+<h3 id="你的下载包含了些什么"><a href="#你的下载包含了些什么" class="headerlink" title="你的下载包含了些什么"></a>你的下载包含了些什么</h3><p>面向 Web 的 Font Awesome 软件包包含了以下目录和文件：</p>
+<table>
+<thead>
+<tr>
+<th>Files &amp; Folders</th>
+<th>What They Are</th>
+<th>Where You Should Start</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/css</td>
+<td>Web 字体样式表文件</td>
+<td>all.css</td>
+</tr>
+<tr>
+<td>/js</td>
+<td>SVG 的 JavaScript 文件</td>
+<td>all.js</td>
+</tr>
+<tr>
+<td>/less</td>
+<td>Less 预处理器文件</td>
+<td>fontawesome.less</td>
+</tr>
+<tr>
+<td>/scss</td>
+<td>Sass 预处理器文件</td>
+<td>fontawesome.scss</td>
+</tr>
+<tr>
+<td>/sprites</td>
+<td>SVG 精灵图</td>
+<td>solid.svg</td>
+</tr>
+<tr>
+<td>/svgs</td>
+<td>每个图标单独对应的 SVG</td>
+<td>单独的 .svg 图标</td>
+</tr>
+<tr>
+<td>/webfonts</td>
+<td>样式表文件中使用的 Web 字体</td>
+<td>参见 /css</td>
+</tr>
+</tbody></table>
+<h3 id="使用-Web-字体的-CSS"><a href="#使用-Web-字体的-CSS" class="headerlink" title="使用 Web 字体的 CSS"></a>使用 Web 字体的 CSS</h3><p>/css/all.css 文件包含核心样式以及使用 Font Awesome 时所需的所有图标样式。/webfonts 文件夹包含上述 CSS 引用并依赖的所有字体文件。</p>
+<p>将整个 /webfonts 文件夹和 /css/all.css 复制到项目的静态资源目录中，然后将对 all.css 文件的引用添加到要使用 Font Awesome 的每个模板或页面的<code>&lt;head&gt;</code>中。</p>
+<div class="tabs" id="css"><ul class="nav-tabs"><li class="tab active"><a href="#css-1">代码</a></li><li class="tab"><a href="#css-2">效果</a></li></ul><div class="tab-content"><div class="tab-pane active" id="css-1"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/all.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span> <span class="comment">&lt;!-- 加载所有样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 regular 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fal fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 light 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="css-2"><p><i class="fas fa-user"></i><br><i class="far fa-user"></i><br><i class="fal fa-user"></i><br><i class="fab fa-github-square"></i></p></div></div></div>
+
+<h3 id="SVG-与-JavaScript-结合"><a href="#SVG-与-JavaScript-结合" class="headerlink" title="SVG 与 JavaScript 结合"></a>SVG 与 JavaScript 结合</h3><p>/js/all.js 会加载所有基本功能，以及使用 Font Awesome 时所需的所有图标样式。将其复制到项目的静态资源目录，在要使用 Font Awesome 的每个模板或页面的<code>&lt;head&gt;</code>中，添加对 all.js 文件的引用。</p>
+<div class="tabs" id="js"><ul class="nav-tabs"><li class="tab active"><a href="#js-1">代码</a></li><li class="tab"><a href="#js-2">效果</a></li></ul><div class="tab-content"><div class="tab-pane active" id="js-1"><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/all.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> <span class="comment">&lt;!-- 加载所有样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;far fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 regular 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fal fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 light 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="js-2"><p><i class="fas fa-user"></i><br><i class="far fa-user"></i><br><i class="fal fa-user"></i><br><i class="fab fa-github-square"></i></p></div></div></div>
+
+<h3 id="仅使用某些样式"><a href="#仅使用某些样式" class="headerlink" title="仅使用某些样式"></a>仅使用某些样式</h3><p>在将 Web 字体与 CSS 框架一起使用时，是否指向使用某些样式的图标？/css 文件夹包含 Font Awesome 所有样式（solid、regular、light 和 brands）的核心样式文件。/webfonts 文件夹包含上述 CSS 引用并依赖的所有字体文件。</p>
+<table>
+<thead>
+<tr>
+<th>图标样式</th>
+<th>Web 字体文件</th>
+<th>CSS 文件</th>
+<th>对应版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Brands</td>
+<td>fa-brands-400.*</td>
+<td>brands.css</td>
+<td>免费版</td>
+</tr>
+<tr>
+<td>Solid</td>
+<td>fa-solid-900.*</td>
+<td>solid.css</td>
+<td>免费版</td>
+</tr>
+<tr>
+<td>Regular</td>
+<td>fa-regular-400.*</td>
+<td>regular.css</td>
+<td>专业版</td>
+</tr>
+<tr>
+<td>Light</td>
+<td>fa-light-300.*</td>
+<td>light.css</td>
+<td>专业版</td>
+</tr>
+</tbody></table>
+<p>将 /webfonts 和 /css 文件夹都复制到项目的静态资源目录中，你可以根据需要删除不打算使用的任何样式的样式表文件和 Web 字体文件。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 项目仅需要 Solid + Brands --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/fontawesome.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/brands.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;/your-path-to-fontawesome/css/solid.css&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在将 SVG 与 CSS 框架一起使用时，如果只想使用某些样式，方法同上。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 项目仅需要 Solid + Brands --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/brands.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/solid.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">src</span>=<span class="string">&quot;/your-path-to-fontawesome/js/fontawesome.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fas fa-user&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 solid 样式 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fab fa-github-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="comment">&lt;!-- 使用 brands 样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<div class="note warning"><p>建议将 /webfonts 和 /css 文件夹保留在同一目录中。因为如果不这样做，则需要更改每种样式的 CSS 文件中引用的 Web 字体的路径。</p>
+</div>
+
+<div class="note info"><p>如果你不想下载或不需要自定义，也可以使用 CDN 来引用。</p>
+<figure class="highlight html"><figcaption><span>引用 CSS 文件</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/xlovet/asset/css/fontawesome/v5/all.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><figcaption><span>引用 JavaScript 文件</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/xlovet/asset/js/fontawesome.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+
+      </div>
+      
+      
+      
+    </div>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Font Awesome</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/comments.js"></script><script src="/fontawesome/js/utils.js"></script><script src="/fontawesome/js/motion.js"></script><script src="/fontawesome/js/next-boot.js"></script><script src="/fontawesome/js/pjax.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.6/pdfobject.min.js","integrity":"sha256-77geM50MfxCD17eqyJR+Dag1svjJOLN+BJ2F/DMqMEY="},"url":"/fontawesome/lib/pdf/web/viewer.html"}</script>
+  <script src="/fontawesome/js/third-party/tags/pdf.js"></script>
+
+
+  <script src="/fontawesome/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://mopsite.github.io/fontawesome/starting/"}</script>
+  <script src="/fontawesome/js/third-party/quicklink.js"></script>
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/xlovet/asset/js/fontawesome.js"></script>
+</body>
+</html>
